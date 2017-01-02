@@ -1,0 +1,113 @@
+body {
+  background: #040c00;
+  font-size: 1em;
+}
+
+#calc {
+  background: #cccccc;
+  height: 350px;
+  width: 400px;
+  margin: 75px auto;
+  border-radius: 5px;
+  box-shadow: 15px 15px 5px black;
+}
+
+#header {
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 1px;
+  font-size: 0.6em;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+#display {
+  background: black;
+  width: 275px;
+  height: 25px;
+  margin: 0 auto;
+  color: white;
+  border-radius: 5px;
+}
+
+#masterDisplay {
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 3px;
+  padding-left: 3px;
+  
+}
+
+#buttons {
+  font-family: 'Orbitron', sans-serif;
+  float: left;
+  display: inline-block;
+  width: 180px;
+  margin-top: 20px;
+  margin-left: 18px;
+  border: ;
+}
+
+.calc-button {
+  margin: 0.5px;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border: solid;
+  border-radius: 5px;
+  
+}
+
+.calc-button:active {
+  background: #bbbbbb;
+  box-shadow: 1px 1px 1px black;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px auto;
+}
+
+#functionBtns {
+  font-family: 'Orbitron', sans-serif;
+  float: right;
+  margin-top: 20px;
+  margin-right: 5px;
+  display: inline-block;
+  height: 230px;
+  width: 170px;
+  border: ;
+}
+
+.functions {
+  display: inline-block;
+  height: 40px;
+  width: 70px;
+  border: solid;
+  margin: 0.5px;
+  border-radius: 5px;
+}
+
+.functions h2 {
+  margin-top: 4px;
+}
+
+.functions:active {
+  background: #bbbbbb;
+  box-shadow: 1px 1px 1px black;
+}
+
+#credits {
+  margin-top: auto;
+  display: inline;
+  font-size: 10px;
+  color: #bbbbbb;
+  border: white;
+}
+
+a {
+  color: #777777;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #bbbbbb;
+}
