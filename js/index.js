@@ -1,4 +1,6 @@
-// all code by @jpmmcbride find me on twitter or GitHub & message me with questions
+// OPEN SOURCE JAVASCRIPT CALCULATOR APP
+//code by jpmmcbride@gmail.com - find me on twitter(@jpmmcbride) or GitHub(jpmcb) & message me with questions
+// ------------------------------------
 
 // define variables to do arithmatic & keep count of numbers
 var masterString = "";
@@ -10,10 +12,9 @@ function numberClick (number) {
   masterString += number.toString();
   document.getElementById("masterDisplay").innerHTML = masterString;
   masterCount = parseFloat(masterString);
-  console.log(masterString.length);
 }
 
-// define the calculator object
+// define the calculator object with functiosn for each button
 var calculator = { 
   clearAll : function () {
     masterString = "";
@@ -32,9 +33,6 @@ var calculator = {
     masterString += " + ";
     masterCount = 0;
     document.getElementById("masterDisplay").innerHTML = masterString;
-    
-    console.log(masterCount);
-    console.log(masterArith);
   },
   
   sub : function () {
@@ -61,10 +59,6 @@ var calculator = {
     masterCount = 0;
     document.getElementById("masterDisplay").innerHTML =
       eval(masterString);
-    
-    console.log(masterString);
-    console.log(masterArith);
-    console.log(masterCount);
   },
   
   error : function () {
@@ -74,7 +68,7 @@ var calculator = {
   }
 }
   
-// get functions for onclick of the calculator buttons & check for errors
+// get functions for onclick events of the calculator buttons & check for errors
 document.getElementById("one").onclick = function () {
   numberClick(1);
   calculator.error();
